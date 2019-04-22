@@ -16,5 +16,3 @@ def numbers (prime)
   puts "Solved for #{max} in #{counter} steps."
   primes.compact
 end
-
-end
