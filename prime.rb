@@ -8,5 +8,8 @@ def numbers (prime)
   primes.each do |p|
     
   next unless p
+  
+   break if p*p > max
+    counter += 1
 
 end
