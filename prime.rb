@@ -1,18 +1,13 @@
 # Add  code here!
 
-def numbers (prime)
-  primes = (0..max).to_a
-  primes[0] = primes[1] = nil
+def prime?(num)
+  false if num < 2
   
-  counter = 0
-  primes.each do |p|
-    
-  next unless p
-  
-   break if p*p > max
-    counter += 1
-(p*p).step(max,p) { |m| primes[m] = nil }
+  (2...num).each do |factor|
+    if (num % factor).zero? 
+      return false
+    end
   end
-  puts "Solved for #{max} in #{counter} steps."
-  primes.compact
+  
+  true
 end
