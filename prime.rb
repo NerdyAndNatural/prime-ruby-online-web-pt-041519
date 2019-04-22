@@ -6,7 +6,7 @@ def prime?(num)
   (2...num).each do |factor|
     if (num % factor).zero? 
       return false
-    end
-  end
+else
  return true
+ end
 end
