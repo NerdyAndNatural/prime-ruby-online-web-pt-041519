@@ -13,4 +13,8 @@ def numbers (prime)
     counter += 1
 (p*p).step(max,p) { |m| primes[m] = nil }
   end
+  puts "Solved for #{max} in #{counter} steps."
+  primes.compact
+end
+
 end
