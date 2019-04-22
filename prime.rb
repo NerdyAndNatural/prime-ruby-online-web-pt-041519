@@ -7,5 +7,6 @@ def numbers (prime)
   counter = 0
   primes.each do |p|
     
-  
+  next unless p
+
 end
